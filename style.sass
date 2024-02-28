@@ -1,0 +1,126 @@
+/* google fonts url */
+$black-color: #000
+$white-color: #fff
+$teal-color: #008080
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200 300 400 500 600 700&display=swap")
+// apply mixins
+
+@mixin display-flex
+    display: flex
+
+@mixin font-options
+    font-family: "Poppins", sans-serif
+
+// apply extend/inheritance
+%align-property
+    align-items: center
+
+*
+    font-family: "Poppins", sans-serif
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    scroll-padding-top: 4rem
+    scroll-behavior: smooth
+    word-wrap: break-word
+    text-decoration: none
+*
+    @include font-options
+
+.sec
+    padding: 50px 100px
+
+image  
+    width: 100%
+body
+    color: $black-color
+
+.header
+    @extend %align-property
+    width: 100%
+    top: 0
+    right: 0
+    @include display-flex
+    justify-content: space-between
+    padding: 18px 100px
+    transition: 0.5s linear
+
+.logo
+    height: 60px
+h1
+    color: $black-color
+image
+    width: 5px
+    height: 5%
+
+.navbar
+    @include display-flex
+    a
+        padding: 8px 17px
+        color: $black-color
+        font-size: 1rem
+        text-transform: uppercase
+        font-weight: 500
+    a:hover
+        color: $white-color
+        background: teal
+        border-radius: 0.2rem
+        transition: 0.2s all linear
+    ul
+        list-style: none
+        @include display-flex
+        flex-direction: row
+
+.headerIcon
+    font-size: 22px
+    cursor: pointer
+    z-index: 10000
+    @include display-flex
+    column-gap: 0.8rem
+.bx
+    color: $black-color
+.bx:hover
+    color: $teal-color
+
+#menu-icon
+    color: $white-color
+    font-size: 24px
+    cursor: pointer
+    display: none
+
+.home
+    @extend %align-property
+    width: 100%
+    position: absolute
+    top: 0
+    background: url(images/background.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    @include display-flex
+    flex-direction: row
+    justify-content: space-between
+    height: 100vh
+    z-index: -1
+
+.homeText
+    h1
+        font-size: 2.9rem
+        color: $teal-color
+        text-transform: uppercase
+        letter-spacing: 1px
+    p
+        font-size: 0.938rem
+        color: black
+        margin: 0.5rem 0 1.4rem
+        width: 40%
+
+.btn
+    padding: 10px 40px
+    border-radius: 0.3rem
+    background: rgb(122, 152, 152)
+    color: $white-color
+    font-weight: 500
+
+.btn:hover
+    background: $teal-color

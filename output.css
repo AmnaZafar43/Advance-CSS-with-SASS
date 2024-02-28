@@ -1,5 +1,9 @@
 /* google fonts url */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200 300 400 500 600 700&display=swap");
+.home, .header {
+  align-items: center;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -10,57 +14,68 @@
   word-wrap: break-word;
   text-decoration: none;
 }
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 .sec {
   padding: 50px 100px;
 }
+
 image {
   width: 100%;
 }
+
 body {
-  color: black;
+  color: #000;
 }
-.logo h1{
-    color: black;
-}
+
 .header {
   width: 100%;
   top: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 18px 100px;
   transition: 0.5s linear;
-  /* background: black; */
 }
+
 .logo {
   height: 60px;
 }
-.logo image {
+
+h1 {
+  color: #000;
+}
+
+image {
   width: 5px;
   height: 5%;
 }
+
 .navbar {
   display: flex;
 }
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-}
 .navbar a {
   padding: 8px 17px;
-  color: black;
+  color: #000;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
 }
 .navbar a:hover {
-    color: white;
+  color: #fff;
   background: teal;
   border-radius: 0.2rem;
   transition: 0.2s all linear;
 }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
 .headerIcon {
   font-size: 22px;
   cursor: pointer;
@@ -68,18 +83,22 @@ ul {
   display: flex;
   column-gap: 0.8rem;
 }
-.headerIcon .bx {
-  color: black;
+
+.bx {
+  color: #000;
 }
-.headerIcon .bx:hover {
-  color: teal;
+
+.bx:hover {
+  color: #008080;
 }
+
 #menu-icon {
-  color: white;
+  color: #fff;
   font-size: 24px;
   cursor: pointer;
   display: none;
 }
+
 .home {
   width: 100%;
   position: absolute;
@@ -91,13 +110,13 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   height: 100vh;
   z-index: -1;
 }
+
 .homeText h1 {
   font-size: 2.9rem;
-  color: teal;
+  color: #008080;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -107,13 +126,17 @@ ul {
   margin: 0.5rem 0 1.4rem;
   width: 40%;
 }
+
 .btn {
   padding: 10px 40px;
   border-radius: 0.3rem;
   background: rgb(122, 152, 152);
-  color: white;
+  color: #fff;
   font-weight: 500;
 }
+
 .btn:hover {
-  background: teal;
+  background: #008080;
 }
+
+/*# sourceMappingURL=output.css.map */
