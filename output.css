@@ -1,6 +1,6 @@
 /* google fonts url */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200 300 400 500 600 700&display=swap");
-.home, .header {
+.about, .home, .header {
   align-items: center;
 }
 
@@ -13,10 +13,6 @@
   scroll-behavior: smooth;
   word-wrap: break-word;
   text-decoration: none;
-}
-
-* {
-  font-family: "Poppins", sans-serif;
 }
 
 .sec {
@@ -39,17 +35,15 @@ body {
   justify-content: space-between;
   padding: 18px 100px;
   transition: 0.5s linear;
+  background: #000;
+  align-items: center;
 }
 
 .logo {
   height: 60px;
 }
 
-h1 {
-  color: #000;
-}
-
-image {
+.logo image {
   width: 5px;
   height: 5%;
 }
@@ -59,18 +53,18 @@ image {
 }
 .navbar a {
   padding: 8px 17px;
-  color: #000;
+  color: #fff;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
 }
 .navbar a:hover {
-  color: #fff;
-  background: teal;
+  background: #bc9667;
   border-radius: 0.2rem;
   transition: 0.2s all linear;
 }
-.navbar ul {
+
+ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -83,13 +77,11 @@ image {
   display: flex;
   column-gap: 0.8rem;
 }
-
-.bx {
-  color: #000;
+.headerIcon .bx {
+  color: #fff;
 }
-
-.bx:hover {
-  color: #008080;
+.headerIcon .bx:hover {
+  color: #bc9667;
 }
 
 #menu-icon {
@@ -100,43 +92,85 @@ image {
 }
 
 .home {
+  display: flex;
   width: 100%;
-  position: absolute;
-  top: 0;
-  background: url(images/background.jpg);
+  background: url(image/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  height: 100vh;
-  z-index: -1;
 }
 
 .homeText h1 {
-  font-size: 2.9rem;
-  color: #008080;
+  font-size: 3.4rem;
+  color: #bc9667;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 .homeText p {
   font-size: 0.938rem;
-  color: black;
+  color: #fff;
   margin: 0.5rem 0 1.4rem;
-  width: 40%;
 }
 
 .btn {
   padding: 10px 40px;
   border-radius: 0.3rem;
-  background: rgb(122, 152, 152);
+  background: #bc9667;
   color: #fff;
   font-weight: 500;
 }
 
 .btn:hover {
-  background: #008080;
+  background: #8a6f4d;
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutImage {
+  width: 50%; 
+}
+
+.aboutImage image {
+  border-radius: 0.5rem;
+}
+
+.abImg {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  align-items: start;
+  width: 50%;
+}
+.aboutText h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.aboutText p {
+  font-size: 0.938rem;
+  margin: 0.5rem 0 1.1rem;
+}
+
+.heading {
+  text-align: center;
+}
+.heading h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=output.css.map */
